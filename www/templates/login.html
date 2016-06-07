@@ -1,0 +1,87 @@
+<ion-view hide-nav-bar="true"   style="background: url('img/black02.jpg');"  class="cust_pane" >
+		<ion-content scroll="false" style="background: url('img/black02.jpg');" class="cust_pane" >  
+			<section class = "container padding">						
+			<div class="row" style="margin-top:10px; margin-bottom:20px; width:100%;">
+			<div class="col col-20"></div>		
+			<div class="col col-60 text-center">			
+				<img src="img/eraterces1.png" width="100%;" height="50px;"></img>
+			</div>			
+			<div class="col col-20"></div>		
+			</div>		
+	 	    <div class="row text-center" style="width:100%;">
+				<!-- <label class="row" style="text-align: center; font-size:1em; color:#7F98A6; width:100%;">Quick 'n Safe</label> -->
+			</div> 
+			<div class="row text-center" style="margin-top:20px; margin-bottom:20px;">	
+				<div class="col col-20"></div>									
+				<div class="col">
+				  <input type="password" placeholder="&nbsp;&nbsp;touch for keyboard" class="text-center" ng-model="tmp.currPassword" style="text-align: center; width:100%; background:#5c5c5c;  color:black; border-radius: 16px;  box-shadow: inset 0 0 10px #000000;" >
+				  </div>									
+				<div class="col col-20"></div>													
+			</div>										
+			  <div class="row padding-vertical" style="font-size:2em; color:#7F98A6">
+				<div class="col col-10"></div>									
+				<div class="col col-20" align="center" ng-click="addCharToPass(1)">		
+					<img class="img-circle" src="img/wh1.png" width="35px;" alt="&#x2460;"></img>
+				</div>
+				<div class="col col-10"></div>	
+				<div class="col col-20" align="center"  ng-click="addCharToPass(2)">
+					<img class="img-circle" src="img/wh2.png" width="35px;" alt="&#x2461;"></img>
+				</div>
+				<div class="col col-10"></div>	
+				<div class="col col-20" align="center"  ng-click="addCharToPass(3)">
+					<img class="img-circle" src="img/wh3.png" width="35px;" alt="&#x2462;"></img>
+				</div>
+				<div class="col col-10"></div>					
+			   </div>
+			   
+			  <div class="row padding-vertical" style="font-size:2em; color:#7F98A6">
+				<div class="col col-10"></div>
+				<div class="col col-20" align="center"  ng-click="addCharToPass(4)">
+					<img class="img-circle" src="img/wh4.png" width="35px;" alt="&#x2463;"></img>
+				</div>
+				<div class="col col-10"></div>	
+				<div class="col col-20" align="center"  ng-click="addCharToPass(5)">
+					<img class="img-circle" src="img/wh5.png" width="35px;" alt="&#x2464;"></img>
+				</div>
+				<div class="col col-10"></div>	
+				<div class="col col-20" align="center"  ng-click="addCharToPass(6)">
+					<img class="img-circle" src="img/wh6.png" width="35px;" alt="&#x2465;"></img>
+				</div>
+				<div class="col col-10"></div>
+			   </div>
+			   
+			  <div class="row padding-vertical" style="font-size:2em; color:#7F98A6">
+				<div class="col col-10"></div>
+				<div class="col col-20" align="center"  ng-click="addCharToPass(7)">
+					<img class="img-circle" src="img/wh7.png" width="35px;" alt="&#x2466;"></img>
+				</div>
+				<div class="col col-10"></div>	
+				<div class="col col-20" align="center"  ng-click="addCharToPass(8)">
+					<img class="img-circle" src="img/wh8.png" width="35px;" alt="&#x2467;"></img>
+				</div>
+				<div class="col col-10"></div>	
+				<div class="col col-20" align="center"  ng-click="addCharToPass(9)">
+					<img class="img-circle" src="img/wh9.png" width="35px;" alt="&#x2468;"></img>
+				</div>
+				<div class="col col-10"></div>
+			  </div>	
+			   
+			  <div class="row padding-vertical" style="font-size:2em; color:#7F98A6">
+				<div class="col col-10"></div>
+				<div class="col col-20" align="center"  ng-click="delLastChar(tmp.currPassword)">
+					<img class="img-circle" src="img/whx.png" width="35px;" alt="x"></img>
+				</div>
+				<div class="col col-10"></div>	
+				<div class="col col-20" align="center"  ng-click="addCharToPass(0)">
+					<img class="img-circle" src="img/wh0.png" width="35px;" alt="&#x2467;"></img>
+				</div>
+				<div class="col col-10"></div>	
+				<div class="col col-20" align="center"  ng-click="passSubmit(tmp.currPassword)">
+					<img class="img-circle" src="img/whs.png" width="35px;" alt=">"></img>
+				</div>
+				<div class="col col-10"></div>
+			   </div>	
+			<div class="row padding" style="font-size:1em; color:grey"></div>
+		 </section>
+        </ion-content>
+		</ion-view>

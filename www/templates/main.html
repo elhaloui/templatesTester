@@ -1,0 +1,18 @@
+ <ion-view title="{{tabTitle}}"> 	 
+		 <ion-content >
+		   <ion-list>		  	   
+			<span ng-repeat="pwd in docs | filter:{cat :'PUB'} | orderBy:'type'" item-height="50px"  item-width="100%">  
+				 <ion-item ng-click="showFlashMsg('<h7>'+pwd.pass+'</h7>')">
+					 <i class="icon ion-card" ng-show="pwd.type == 'ATM'"></i>
+					 <i class="icon ion-ios-email-outline" ng-show="pwd.type == 'EML'"></i>  		 
+					 <i class="icon ion-monitor" ng-show="pwd.type == 'SYS'"></i>
+					 <i class="icon ion-ios-paper-outline" ng-show="pwd.type == 'NOTE'"></i>  		 
+					 <i class="icon ion-earth" ng-show="pwd.type == 'WEB'"></i>		
+					 <i class="icon ion-ios-cart-outline" ng-show="pwd.type == 'RET'"></i>	 
+						&nbsp;&nbsp;{{pwd.title}}  
+					 <ion-option-button class="ion-edit" ng-click="editMKB(pwd.id)"></ion-option-button>				 
+				</ion-item> 
+			</span>	
+			</ion-list>
+		  </ion-content>
+      </ion-view>

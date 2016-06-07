@@ -1,0 +1,20 @@
+/* Empty. Add your own CSS if you like */
+
+.container { 
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+		.container > .row {
+		flex: 1;
+		margin-top:10px;
+		margin-bottom:20px; 
+		width:100%;
+	}		
+		.custom-icon {color : red;}		
+		.img-circle { border-radius: 50%; cursor: pointer; }
+		.img-circle:hover { background: #808080;}
+		.cust_pane {background: black;}
+.main-pass {
+	background: url('../img/black02.jpg'); 
+}

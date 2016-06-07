@@ -1,0 +1,27 @@
+<ion-view hide-nav-bar="true" class="main-pass"> 		
+		<ion-content scroll="false" has-header="false">		
+		<section class = "container padding">						
+						
+		  <div align="center" ><h4 style="color:grey;">Initialize</h4></div>
+		  <div class="card"  style="background: transparent; margin-top:0px;">
+			<div class="list list-inset">				
+			  <label class="item item-input" ng-show="passFound">
+				<input type="password" placeholder="Old Password" ng-model="formPass.oldPass">
+			  </label>			 
+			  <label class="item item-input">
+					<input type="password" placeholder="PIN / Password" ng-model="formPass.pass1">
+			  </label>			
+			  <label class="item item-input">
+					<input type="password" placeholder="Confirm" ng-model="formPass.pass2">
+			  </label>			
+			</div>
+			</div>
+			<div class="padding">
+			  <button ng-click="cancelModalPass()" ng-show="passFound" class="button button-dark activated">Cancel</button>
+			  <button ng-click="savePass()" ng-show="passFound" class="button button-dark activated" style="float: right">Save</button>
+			  <button ng-click="savePass()" ng-show="!passFound" class="button button-full button-dark activated" style="float: right">Save</button>
+			</div>
+		  </section>
+		  </ion-content>
+		<!-- </ion-modal-view> -->
+		</ion-view>
