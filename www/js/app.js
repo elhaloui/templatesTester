@@ -32,7 +32,8 @@ angular.module('docLock', ['ionic', 'ngCordova'])
 		console.log('here') ;
 	}
 })
-.controller('mkbNavCtrl', function ($scope, $state,$ionicSideMenuDelegate, $ionicLoading, $ionicPopup, $ionicModal, $cordovaSQLite, $interval) {
+.controller('mkbNavCtrl', function ($scope, $state,$cordovaImagePicker,$ionicSideMenuDelegate, $ionicLoading, $ionicPopup, $ionicModal, $cordovaSQLite, $interval) {
+
 
 	$scope.pwdList = JSON.parse(localStorage.getItem("pwdList"));
 	$scope.tmp = { currPassword : "" };
@@ -215,6 +216,26 @@ angular.module('docLock', ['ionic', 'ngCordova'])
 			str += String.fromCharCode(parseInt(hex.substr(i, 2), 16));
 		return str;
 	};
+
+	$scope.pickPicture=function()
+	{
+		var options = {
+   maximumImagesCount: 10,
+   width: 800,
+   height: 800,
+   quality: 80
+  };
+
+  $cordovaImagePicker.getPictures(options)
+    .then(function (results) {
+      for (var i = 0; i < results.length; i++) {
+        console.log('Image URI: ' + results[i]);
+      }
+    }, function(error) {
+      // error getting photos
+    });
+
+};
 
 });
 
